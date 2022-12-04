@@ -1,5 +1,5 @@
 {
-  "name": "num_guess_game",
+  "name": "@esjayeff/num_guess_game",
   "version": "1.0.0",
   "description": "\"# num_guess_game\"",
   "main": "index.js",
