@@ -11,7 +11,7 @@ var playerWins = 0;
 var computerWins = 0;
 function main() {
     console.log(`Round Number ${gameNumber}`);
-    let playerNumber = +prompt("Please Enter your Number between 1-10: ");
+    let playerNumber = +prompt("Please Enter your Number between 0-9: ");
     console.log(`Player Guessed ${playerNumber}`);
     let computerNumber = Math.floor((Math.random() * 10) - 1);
     console.log(`Computer Number is ${computerNumber}`);
@@ -22,19 +22,24 @@ function main() {
     }
     else if (playerNumber === computerNumber) {
         playerWins++;
+        counter();
     }
     else {
         computerWins++;
+        counter();
     }
+}
+;
+function counter() {
     console.log(`Player Wins = ${playerWins}`);
     console.log(`Computer Wins = ${computerWins}`);
     gameNumber++;
     playRepeat();
-    function playRepeat() {
-        let playAgain = prompt("Want to play again Y/N: ");
-        if (playAgain === "Y" || playAgain === "y") {
-            main();
-        }
+}
+function playRepeat() {
+    let playAgain = prompt("Want to play again Y/N: ");
+    if (playAgain === "Y" || playAgain === "y") {
+        main();
     }
 }
 ;
