@@ -1,6 +1,6 @@
 {
   "name": "@esjayeff/num_guess_game",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"# num_guess_game\"",
   "main": "index.js",
   "scripts": {
