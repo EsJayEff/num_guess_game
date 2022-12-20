@@ -1,27 +1,22 @@
 {
-  "name": "@esjayeff/num_guess_game",
-  "version": "1.0.1",
-  "description": "\"# num_guess_game\"",
+  "name": "esjaynumguess",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "type": "module",
+  "bin": {
+    "numguess": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EsJayEff/num_guess_game.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EsJayEff/num_guess_game/issues"
-  },
-  "homepage": "https://github.com/EsJayEff/num_guess_game#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.10",
     "@types/prompt-sync": "^4.2.0"
   }
 }
